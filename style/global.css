@@ -1,0 +1,59 @@
+@charset "UTF-8";
+
+:root {
+  --font-family: 'Vollkorn', Georgia, Times, serif;
+  --color01: linear-gradient(135deg, #8844ee, #b07dfb);
+  --color02: #fafbfc;
+  --color03: #b07dfb;
+
+}
+
+body {
+  font-family: var(--font-family);
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  border-radius: 5px;
+}
+
+
+/* GRID GERAL */
+
+.build {
+  display: grid;
+  grid-template-columns: minmax(160px, 1fr) 3fr 300px;
+  grid-template-areas: 
+  "header header header"
+  "sidenav main__content publicity"
+  "footer footer footer";
+}
+
+.header {
+  grid-area: header;
+}
+
+.sidenav {
+  grid-area: sidenav;
+}
+
+.main__content {
+  grid-area: main__content;
+}
+
+.publicity {
+  grid-area: publicity;
+}
+
+.footer {
+  grid-area: footer;
+}
