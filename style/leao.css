@@ -1,0 +1,18 @@
+.attributes-leao {
+  align-self: start;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 5px 5px 15px 0px rgba(44, 44, 44, 0.15);
+  background: var(--color01);
+}
+
+.attributes-leao li {
+  color: white;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 1.25em;
+  padding: 15px;
+}
+
+.attributes-leao li + li {
+  border-top: 2px solid var(--color03);
+}
